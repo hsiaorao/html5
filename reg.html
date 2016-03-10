@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>國立政治大學  線上報名系統</title>
+  </head>
+  
+  <body>
+    <h2>國立政治大學 線上報名系統</h2>
+    <p>*為必填</p>
+    <form>
+      <fieldset>
+        <p>
+          <label for="phone">姓名*：</label>
+          <input type="name" id="inpName" maxlength="10" required>
+        </p>
+        <p>
+          <label for="college">學院*：</label>
+          <select id="college" name="college" required>
+            <option value="LiberalArt">文學院</option>
+            <option value="Science">理學院</option>
+            <option value="SociScience">社會科學學院</option>
+            <option value="Law">法學院</option>
+            <option value="Commerce">商學院</option>
+            <option value="Foreign">外國語文學院</option>
+            <option value="Communication">傳播學院</option>
+            <option value="International">國際事務學院</option>
+            <option value="Education">教育學院</option>
+          </select>
+        </p>
+        <p>
+          <label for="phone">手機*：</label>
+          <input type="tel" name="phone" maxlength="10" required pattern="[0-9]{10}">
+        </p>
+        <p>
+          <label for="email">Email*：</label>
+          <input type="email" name="email" required>
+        </p>
+        <p>
+          <label for="birthday">生日：</label>
+          <input type="birthday" name="birthday" placeholder="西元年／月／日">
+        </p>
+      </fieldset>
+      <p>
+        <input type="submit" value="送出">
+      </p>
+    </form>
+  </body>
+</html>
+
